@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Teko, Arial, Helvetica, sans-serif;
+    background-color: #E1E8FA;
+}
+
+.main {
+    display: grid;
+    max-width: auto;
+    position: relative;
+    margin: auto;
+    height: auto;
+    grid-template-areas: "nav nav" "content portrait" "skills skills" "footer footer";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 3rem 32rem auto 5rem;
+    gap: .25%;
+}
+
+.nav,
+.content,
+.portrait,
+.skills,
+.footer {
+    background-color: rgb(116, 107, 107);
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    
+}
+
+.attribute {
+    padding-left: 3%;
+    text-decoration: none;
+    color: #E1E8FA;
+}
+
+.content {
+    grid-area: content;
+}
+
+.portrait {
+    grid-area: portrait;
+}
+
+.skills {
+    grid-area: skills;
+    font-size: 5rem;
+}
+
+.footer {
+    grid-area: footer;
+}
