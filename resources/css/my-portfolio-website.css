@@ -18,7 +18,7 @@ html {
     height: auto;
     grid-template-areas: "nav nav" "content portrait" "skills skills" "footer footer";
     grid-template-columns: 60% 40%;
-    grid-template-rows: 3rem 32rem auto 5rem;
+    grid-template-rows: 3rem 32rem auto 3rem;
     gap: .25%;
 }
 
@@ -49,6 +49,17 @@ html {
 
 .portrait {
     grid-area: portrait;
+    padding-top: 10%;
+}
+
+.portrait img {
+    width: auto;
+    height: 90%;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills {
