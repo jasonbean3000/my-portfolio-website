@@ -6,8 +6,8 @@
 
 html {
     font-size: 16px;
-    font-family: Teko, Arial, Helvetica, sans-serif;
-    background-color: #E1E8FA;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    background-color: #121213;
 }
 
 .main {
@@ -16,18 +16,19 @@ html {
     position: relative;
     margin: auto;
     height: auto;
-    grid-template-areas: "nav nav" "content portrait" "skills skills" "footer footer";
+    grid-template-areas: "nav nav" "content portrait" "skillsTitle skillsTitle" "skills skills" "footer footer";
     grid-template-columns: 60% 40%;
-    grid-template-rows: 3rem 32rem auto 3rem;
-    gap: .25%;
+    grid-template-rows: 3rem 40rem 3rem auto 3rem;
 }
 
 .nav,
 .content,
 .portrait,
+.skillsTitle,
 .skills,
 .footer {
-    background-color: rgb(116, 107, 107);
+    background-color: #121213;
+    color:#E1E8FA;
 }
 
 .nav {
@@ -36,7 +37,10 @@ html {
     align-items: center;
     
 }
-
+.nav h3 {
+    padding-left: 5%;
+    padding-top: 1%;
+}
 .attribute {
     padding-left: 3%;
     text-decoration: none;
@@ -45,8 +49,19 @@ html {
 
 .content {
     grid-area: content;
+    padding-left: 8%;
+    display: flex;
+    align-items: center;
 }
 
+.content h1 {
+    font-size: 3rem;
+    padding-top: 4%;
+}
+
+.content h2 {
+    font-size: 2rem;
+}
 .portrait {
     grid-area: portrait;
     padding-top: 10%;
@@ -62,11 +77,28 @@ html {
     margin-right: auto;
 }
 
+.skillsTitle {
+    grid-area: skillsTitle;
+    display: flex;
+    align-items: center;
+    padding-left: 5.5%;
+    font-size: 1.2rem;
+}
+
+
+
 .skills {
     grid-area: skills;
     font-size: 5rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .footer {
     grid-area: footer;
+    padding-left: 5.5%;
+    display: flex;
+    align-items: center;
 }
