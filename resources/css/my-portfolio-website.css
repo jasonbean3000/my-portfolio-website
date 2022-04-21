@@ -50,6 +50,10 @@ html {
     padding-top: 1%;
     cursor: pointer;
 }
+
+.nav h3:hover {
+    color: #D4B620;
+}
 .attribute {
     color: #F5D94D;
 }
@@ -110,8 +114,29 @@ html {
     text-align: left;
 }
 
+h3 {
+    padding-top: 5%;
+}
+
 #contact-button h1 {
     text-align: center;
+}
+
+.email {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #F5D94D;
+    width: auto;
+}
+
+.github {
+    color: #0969da;
+    text-decoration: none;
+    
+}
+
+.github:hover {
+    text-decoration: underline;
 }
 
 .portrait {

@@ -15,9 +15,11 @@ switchButtonHome = () => {
     projects.style.display = 'none';
     contact.style.display = 'none';
     homeclick.style.color = '#F5D94D';
+    
     aboutclick.style.color = '#E1E8FA';
     projectsclick.style.color = '#E1E8FA';
     contactclick.style.color = '#E1E8FA';
+    
 }
 
 switchButtonAbout = () => {
@@ -29,6 +31,7 @@ switchButtonAbout = () => {
     aboutclick.style.color = '#F5D94D';
     projectsclick.style.color = '#E1E8FA';
     contactclick.style.color = '#E1E8FA';
+    
 };
 
 switchButtonProjects = () => {
@@ -40,6 +43,7 @@ switchButtonProjects = () => {
     aboutclick.style.color = '#E1E8FA';
     contact.style.display = 'none';
     contactclick.style.color = '#E1E8FA';
+    
 }
 
 switchButtonContact = () => {
@@ -53,10 +57,10 @@ switchButtonContact = () => {
     projectsclick.style.color = '#E1E8FA';
 }
 
-homeclick.addEventListener('click', switchButtonHome);
-aboutclick.addEventListener('click', switchButtonAbout);
-projectsclick.addEventListener('click', switchButtonProjects);
-contactclick.addEventListener('click', switchButtonContact)
+homeclick.addEventListener('mouseenter', switchButtonHome);
+aboutclick.addEventListener('mouseenter', switchButtonAbout);
+projectsclick.addEventListener('mouseenter', switchButtonProjects);
+contactclick.addEventListener('mouseenter', switchButtonContact)
 
 
 
