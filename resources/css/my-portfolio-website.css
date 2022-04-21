@@ -37,6 +37,11 @@ html {
     align-items: center;
 }
 
+#home-button {
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+}
+
 #home-click {
     color:#F5D94D
 }
@@ -47,7 +52,6 @@ html {
 }
 .attribute {
     color: #F5D94D;
-    
 }
 
 .content {
@@ -55,7 +59,6 @@ html {
     padding-left: 8%;
     display: flex;
     align-items: center;
-
 }
 
 .content h1 {
@@ -67,12 +70,23 @@ html {
     font-size: 2rem;
 }
 
-
-
 #about-button {
     display: none;
     flex-direction: column;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
 }
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 
 #about-button h2 {
     padding-top: 5%;
@@ -80,11 +94,15 @@ html {
 
 #projects-button {
     display: none;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
 }
 
 #contact-button {
     display: none;
     flex-direction: column;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
 }
 
 #contact-button h2 {
