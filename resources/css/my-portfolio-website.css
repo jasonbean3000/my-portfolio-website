@@ -35,16 +35,19 @@ html {
     grid-area: nav;
     display: flex;
     align-items: center;
-    
+}
+
+#home-click {
+    color:#F5D94D
 }
 .nav h3 {
     padding-left: 5%;
     padding-top: 1%;
+    cursor: pointer;
 }
 .attribute {
-    padding-left: 3%;
-    text-decoration: none;
-    color: #E1E8FA;
+    color: #F5D94D;
+    
 }
 
 .content {
@@ -52,6 +55,7 @@ html {
     padding-left: 8%;
     display: flex;
     align-items: center;
+
 }
 
 .content h1 {
@@ -62,6 +66,36 @@ html {
 .content h2 {
     font-size: 2rem;
 }
+
+
+
+#about-button {
+    display: none;
+    flex-direction: column;
+}
+
+#about-button h2 {
+    padding-top: 5%;
+}
+
+#projects-button {
+    display: none;
+}
+
+#contact-button {
+    display: none;
+    flex-direction: column;
+}
+
+#contact-button h2 {
+    padding-top: 5%;
+    text-align: left;
+}
+
+#contact-button h1 {
+    text-align: center;
+}
+
 .portrait {
     grid-area: portrait;
     padding-top: 10%;
