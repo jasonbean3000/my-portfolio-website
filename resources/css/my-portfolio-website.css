@@ -18,7 +18,7 @@ html {
     height: auto;
     grid-template-areas: "nav nav" "content portrait" "skillsTitle skillsTitle" "skills skills" "footer footer";
     grid-template-columns: 60% 40%;
-    grid-template-rows: 3rem 40rem 3rem auto 3rem;
+    grid-template-rows: 3rem 40rem auto auto 3rem;
 }
 
 .nav,
